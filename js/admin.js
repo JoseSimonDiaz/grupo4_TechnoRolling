@@ -1,47 +1,77 @@
-// // Selección del cuerpo de la tabla
-// let cuerpoTabla = document.querySelector("tbody");
-
-// function crearTabla(listaProductos) {
-//   // Limpiar el contenido de la tabla antes de rellenarla
-//   cuerpoTabla.innerHTML = '';
-
-//   // Iterar sobre cada producto en el array
-//   listaProductos.forEach(product => {
-//     // Crear una nueva fila
-//     const tr = document.createElement('tr');
-
-//     // Crear las celdas de la fila con los datos del producto
-//     const celdas = `
-//       <td>${listaProductos.nombre}</td>
-//       <td>${product.descripcion}</td>
-//       <td>${product.stock}</td>
-//       <td>${product.precio}</td>
-//       <td>${product.categoria}</td>
-//       <td>${product.id}</td>
-//       <td><button data-id="${product.id}">Eliminar</button></td>
-//       <td><button data-id="${product.id}">Editar</button></td>
-//     `;
-
-//     // Asignar las celdas a la fila
-//     tr.innerHTML = celdas;
-
-//     // Añadir la fila al cuerpo de la tabla
-//     cuerpoTabla.appendChild(tr);
-//   });
-// }
-
-// // Ejemplo de uso con el array de productos
-// const listaProductos = [
-//   { id: 1, nombre: 'Producto 1', descripcion: 'Descripción del producto 1', stock: 10, precio: 100, categoria: 'Categoría 1' },
-//   // Agregar más productos según sea necesario
-// ];
-
-// // Llamada a la función para crear la tabla
-// crearTabla(listaProductos);
-
-
 let cuerpoTabla = document.querySelector("tbody");
+let contador = document.getElementById('contador');
 
-function crearTabla (){
-    
+// Función para crear la tabla de productos
+function crearTabla() {
+    cuerpoTabla.innerHTML = '';
+    contador.innerText = "Productos registrados: " + listaProductos.length;
+
+    // Verificar si hay productos
+    if (listaProductos.length === 0) {
+        cuerpoTabla.innerHTML = "<tr><td colspan='9'>No hay productos registrados.</td></tr>";
+        return;
+    }
+
+    listaProductos.forEach((producto) => {
+        let fila = document.createElement('tr');
+
+        let celdas = `
+            <td><img src="${producto.imagen}" alt="" style="width: 50px;"></td>
+            <td>${producto.nombre}</td>
+            <td>${producto.descripcion}</td>
+            <td>${producto.marca}</td>
+            <td>${producto.stock}</td>
+            <td>${producto.precio}</td>
+            <td>${producto.categoria}</td>
+            <td>${producto.id}</td>
+            <td>
+                <button class="btn btn-danger" onclick="eliminarProducto(${producto.id})">
+                    <i class='bx bx-trash lx-lg'></i>
+                </button>
+                <button class="btn btn-primary" onclick="editarProducto(${producto.id})">
+                    <i class='bx bx-pencil' style='color:#a69cac'></i>
+                </button>
+            </td>
+        `;
+
+        fila.innerHTML = celdas;
+        cuerpoTabla.appendChild(fila);
+    });
 }
+
+// Función para eliminar un producto
+function eliminarProducto(id) {
+    let index = listaProductos.findIndex(item => item.id === id);
+
+    if (index >= 0) {
+        let confirmacion = confirm(`¿Estás seguro de eliminar a ${listaProductos[index].nombre}?`);
+        if (confirmacion) {
+            listaProductos.splice(index, 1);
+            localStorage.setItem('productos', JSON.stringify(listaProductos)); // Corregido el nombre de la clave
+            crearTabla();
+        }
+    }
+}
+
+// Función para editar un producto
+function editarProducto(id) {
+    // Encuentra el producto a editar
+    const productoAEditar = listaProductos.find(producto => producto.id === id);
+
+    // Muestra un modal o formulario para editar los datos (ejemplo con un prompt sencillo)
+    const nuevoNombre = prompt("Ingrese el nuevo nombre del producto:", productoAEditar.nombre);
+    // ... otros campos a editar
+
+    // Actualiza los datos del producto
+    productoAEditar.nombre = nuevoNombre;
+    // ... actualiza otros campos
+
+    // Guarda los cambios en el localStorage
+    localStorage.setItem('productos', JSON.stringify(listaProductos));
+
+    // Vuelve a renderizar la tabla
+    crearTabla();
+}
+
+// Inicializar la tabla al cargar la página
+crearTabla();

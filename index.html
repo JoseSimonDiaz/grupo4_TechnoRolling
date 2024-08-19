@@ -32,7 +32,64 @@
 
   <body id="body">
     <header id="header" class="">
-    
+      <nav id="menu_hamburgesa"
+        class="navbar navbar-expand-lg navbar-light bg-light text-center pt-2 pb-2"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TechnoRolling🖥</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <i class='bx bx-menu bx-lg'></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><box-icon type="solid" name="file-txt"></box-icon
+                  >SOBRE NOSOTROS</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Precios</a>
+              </li> -->
+            </ul>
+            <form id="form-search" class="d-flex mx-auto mx-lg-0">
+              <input
+              id="search"
+                class="border border-2 rounded-pill border form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button
+              class="btn btn-outline-success d-flex justify-content-center align-items-center"
+              type="submit"
+            >
+              <i class="bx bx-search bx-sm"></i>
+            </button>
+            
+
+            </form>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Login</a> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main id="main" class="pb-3 d-flex justify-content-center align-items-center justify-content-center">
       <!-- Carousel -->
@@ -106,22 +163,18 @@
              </div>
         </div>
        </section>
-      <!-- categorias -->
-       <section id="categorias">
-        
-       </section>
       <!-- destacados -->
       <section id="destacados" class="mb-3 m-4 text-center ">
         <h2 class="text-center border-bottom border-2">NUESTRO PRODUCTOS</h2>
         <div class="categoriasProductos">
-          <button class="categorias activado">Todo</button>
-          <button class="categorias ">Procesadores</button>
-          <button class="categorias">Placa madre</button>
-          <button class="categorias">Memorias Ram</button>
-          <button class="categorias">Almacenamiento</button>
-          <button class="categorias">Gabinetes</button>
-          <button class="categorias">Monitores</button>
-          <button class="categorias">Perifericos</button>
+          <button class="categorias activado" data-category="Todo">Todo</button>
+          <button class="categorias " data-category="Procesadores">Procesadores</button>
+          <button class="categorias" data-category="Placa madre">Placa madre</button>
+          <button class="categorias" data-category="Memoria Ram">Memorias Ram</button>
+          <button class="categorias" data-category="Almacenamiento">Almacenamiento</button>
+          <button class="categorias" data-category="Gabinetes">Gabinetes</button>
+          <button class="categorias" data-category="Monitores">Monitores</button>
+          <button class="categorias" data-category="Perifericos">Perifericos</button>
         </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 m-2">
           <!-- <div class="col ">
@@ -198,9 +251,41 @@
     </main>
     <!-- Footer -->
     <footer id="footer">
-   
+    <p>Hecho con ❤️ en TechnoRolling</p>
     </footer>
-    
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="login_modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

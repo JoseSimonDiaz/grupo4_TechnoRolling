@@ -89,6 +89,7 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+
 /* Estilo para pantallas pequeñas */
 @media (max-width: 768px) {
     table {
