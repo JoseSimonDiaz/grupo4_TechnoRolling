@@ -405,9 +405,6 @@ html {
   }
 }
 
-
-
-
 #img_asus{
   width: 100%;
   height: 100%;
@@ -421,13 +418,6 @@ html {
   object-fit: cover;
  border-radius: 10px;
 }
-
-/* #img_asus img:hover{
-  transform: scale(0.1);
-  transform: translate(0, 1px);
-  box-shadow: 10px -10px 25px 0 rgba(16, 226, 253, 0.5),
-    -10px 10px 25px 0 rgba(183, 0, 255, 0.794);
-} */
 
 #opinion{
   width: 100%;
@@ -478,7 +468,7 @@ html {
   /* gap: 12px; */
   margin: 10px;
   position: relative;
-  border: 2px solid blue;
+  border: 2px solid rgba(0, 0, 255, 0.493);
 }
 
 #opinion .carrouselCard::before {
@@ -491,7 +481,6 @@ html {
   border: 2px solid transparent;
   animation: slide 2s infinite alternate;
 }
-
 
 
 #opinion .conteiner_img{
@@ -540,7 +529,12 @@ html {
 
 #nosotros{
  width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center
 }
+
 #nosotros h2{
   background: linear-gradient(to top, #30cfd0, #c43ad6);
   -webkit-background-clip: text;
@@ -550,10 +544,72 @@ html {
   font-size: 2rem;
   padding: 10px;
   position: relative;
-  margin: 0 50px 20px 50px;
+  
 }
 
+#nosotros .contenedor_nosotros{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 50px;
+}
 
+#nosotros .nosotros-card{
+  width: 200px;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  border: 2px solid rgba(0, 0, 255, 0.493);
+
+}
+.nosotros-img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros-img img{
+  width: 100px;
+  height: 100px;
+  align-items: flex-start;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.nosotros-text{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.nosotros-text h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--terciary);
+}
+
+.nosotros-text p{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--terciary);
+}
 /*  FIN MAIN*/
 
 /*FOOTER*/

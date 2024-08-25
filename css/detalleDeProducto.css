@@ -36,10 +36,13 @@ html {
  /* BODY */
 
  #body{
+    width: 100%;
+    height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
+  background-color: var(--secundary);
  }
 
  /* FIN BODY */
@@ -49,6 +52,7 @@ html {
 #main{
     background: var(--secundary);
     width: 100%;
+    margin-top: 20px;
 }
 
 .detalleProducto{
@@ -176,6 +180,58 @@ html {
 
 /* FIN MAIN*/
 
+/*footer*/
+
+.footer {
+    width: 100%;
+    background: linear-gradient(to right, #1a1a1a, #333);
+    border-radius: 26px 26px 0 0;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(150, 6, 133);
+  }
+  
+   .footer a {
+    color: rgb(252, 102, 234);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+   .footer a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  }
+  
+   .footer-links {
+    margin: 20px 0;
+  }
+  
+  #footer .footer-links .anc-footer {
+    margin: 10px 0;
+  }
+  
+  #footer .footer-links .anc-footer a {
+    font-size: 1.1rem;
+  }
+  
+   .footer-copyright {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+
+/*fin footer*/
+
 /*MEDIAQUERY*/
 
 @media(min-width: 768px){
@@ -189,7 +245,7 @@ html {
         align-items: flex-start;
     }
     .detalleProducto .conteiner_image img{
-       width: 200px ;
+       width: 330px ;
     }
     .detalleDescripcion{
          width: 60%;
