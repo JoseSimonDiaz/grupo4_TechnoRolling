@@ -2,7 +2,9 @@
 const productosRow = document.querySelector('.row');
 const verMas = document.querySelector('.verMas');
 const searchInput = document.getElementById('search');
-const productodestado = document.getElementById('destacados');
+const categoriasConteiner = document.querySelector('.categoriasProductos');
+const listaDeCategorias = document.querySelectorAll('.categorias');
+
 // Creación y estilización del mensaje de "No hay productos"
 const mensajeNoProductos = document.createElement('p');
 mensajeNoProductos.textContent = "No hay productos relacionados";
@@ -77,10 +79,71 @@ const aumentarLimite = () => {
   
 };
 
+// Función para filtrar por categoría
+
+// Función para cambiar el estado del botón
+const estadoDeBoton = (categoriaSeleccionada) => {
+  listaDeCategorias.forEach(categoriasBtn => {
+      if (categoriasBtn.dataset.category === categoriaSeleccionada) {
+          categoriasBtn.classList.add('activado');
+      } else {
+          categoriasBtn.classList.remove('activado');
+      }
+  });
+}
+
+// Función para aplicar el filtro de la categoría seleccionada
+const estadoDeFiltro = (boton) => {
+  const categoria = boton.dataset.category;
+  limiteDeProductos.filtroActivado = categoria !== 'Todo' ? categoria : null;
+  estadoDeBoton(categoria); // Cambiar el estado del botón
+
+  productosRow.innerHTML = ''; // Limpiar los productos existentes
+
+  if (limiteDeProductos.filtroActivado) {
+      renderizarProductosFiltrados(); // Filtrar productos
+      limiteDeProductos.productosIndex = 0;
+  } else {
+      renderizarProductos(listaProductos); // Mostrar todos los productos
+  }
+}
+
+// Función para manejar el clic en un botón de categoría
+const aplicarFiltro = ({ target }) => {
+  if (!filtroDeBotonInactivo(target)) {
+      return;
+  }
+  estadoDeFiltro(target);
+}
+
+// Función para renderizar los productos filtrados
+const renderizarProductosFiltrados = () => {
+  const productosFiltrados = listaProductos.filter(producto =>
+      producto.categoria === limiteDeProductos.filtroActivado
+  );
+  renderizarProductos(productosFiltrados);
+}
+
+// Función para verificar si el botón no está activo
+const filtroDeBotonInactivo = (elemento) => {
+  return (
+      elemento.classList.contains('categorias') && !elemento.classList.contains('activado')
+  );
+}
+
+// Vincular la función aplicarFiltro a los botones de categorías
+listaDeCategorias.forEach(boton => {
+  boton.addEventListener('click', aplicarFiltro);
+});
+
+// Renderizar todos los productos al cargar la página
+renderizarProductos(listaProductos);
+
 // Inicializar la página
 const iniciar = () => {
   renderizarProductos(limiteDeProductos.productos[0]);
   verMas.addEventListener('click', aumentarLimite);
+  categoriasConteiner.addEventListener('click', aplicarFiltro);
 };
 
 iniciar();

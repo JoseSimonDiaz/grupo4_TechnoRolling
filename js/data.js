@@ -85,7 +85,7 @@ const listaProductos = [
       nombre: "Mouse USB Shenlong M788SP Gamer",
       stock: 12,
       descripcion: "texto fachero:D",
-      categoria: "Perifericos",
+      categoria: "perifericos",
       marca: "shelong",
       imagen: "https://statics.qloud.ar/m-y-m-computacion-06-2020/148_05-02-2024-05-02-30-0000000000007798135512071.jpg",
       precio: 5000
@@ -125,7 +125,7 @@ const listaProductos = [
       nombre: "Procesador Intel Core I9 13900KF",
       stock: 12,
       descripcion: "texto fachero:D",
-      categoria: "procesadores",
+      categoria: "Procesadores",
       marca: "intel",
       imagen: "https://statics.qloud.ar/m-y-m-computacion-06-2020/148_05-07-2024-03-07-10-0000000000005032037258623.jpg",
       precio: 200000 
@@ -135,7 +135,7 @@ const listaProductos = [
       nombre: "Procesador Amd Ryzen 3 3200G 4.0GHz AM4",
       stock: 12,
       descripcion: "texto fachero:D",
-      categoria: "procesadores",
+      categoria: "Procesadores",
       marca: "ryzen",
       imagen: "https://www.qloud.ar/SITES/IMG/m-y-m-computacion-06-2020/0000000000000730143309851.webp",
       precio: 50000 
@@ -145,7 +145,7 @@ const listaProductos = [
       nombre: "Procesador Intel Pentium Gold G6405",
       stock: 12,
       descripcion: "texto fachero:D",
-      categoria: "procesadores",
+      categoria: "Procesadores",
       marca: "intel",
       imagen: "https://www.qloud.ar/SITES/IMG/m-y-m-computacion-06-2020/0000000000005032037215497.jpg",
       precio: 50000 
@@ -155,7 +155,7 @@ const listaProductos = [
       nombre: "Placa De Video Radeon Asus RX 7600",
       stock: 12,
       descripcion: "texto fachero:D",
-      categoria: "placas de video",
+      categoria: "Placas de Video",
       marca: "radeon",
       imagen: "https://statics.qloud.ar/m-y-m-computacion-06-2020/148_04-06-2024-01-06-07-0000000000004711387459225.jpg",
       precio: 100000 
