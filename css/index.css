@@ -406,11 +406,6 @@ html {
   100% {background-position: 200%}
 }
 
-@media screen and (max-width: 1000px) {
-  :root {
-    --m: 60rem;
-  }
-}
 
 #img_asus{
   width: 100%;

@@ -225,3 +225,7 @@ const listaProductos = [
     productosIndex: 0,
     filtroActivado: null,
   }
+
+  if (!localStorage.getItem('Productos')) { 
+    localStorage.setItem('Productos', JSON.stringify(listaProductos));
+   }

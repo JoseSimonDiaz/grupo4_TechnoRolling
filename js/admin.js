@@ -25,11 +25,11 @@ function crearTabla() {
             <td>${producto.categoria}</td>
             <td>${producto.id}</td>
             <td>
-                <button class="btn btn-danger" onclick="eliminarProducto(${producto.id})">
+                <button class="btn btn-danger" onclick="eliminarProducto(${producto.id})" >
                     <i class='bx bx-trash lx-lg'></i>
                 </button>
-                <button class="btn btn-primary" onclick="editarProducto(${producto.id})">
-                    <i class='bx bx-pencil' style='color:#a69cac'></i>
+                <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#modalEditar">
+                    <i class='bx bx-pencil' style='color:#fff'></i>
                 </button>
             </td>
         `;
@@ -47,31 +47,14 @@ function eliminarProducto(id) {
         let confirmacion = confirm(`¿Estás seguro de eliminar a ${listaProductos[index].nombre}?`);
         if (confirmacion) {
             listaProductos.splice(index, 1);
-            localStorage.setItem('productos', JSON.stringify(listaProductos)); // Corregido el nombre de la clave
+            localStorage.setItem('productos', JSON.stringify(listaProductos)); 
             crearTabla();
         }
     }
 }
 
 // Función para editar un producto
-function editarProducto(id) {
-    // Encuentra el producto a editar
-    const productoAEditar = listaProductos.find(producto => producto.id === id);
 
-    // Muestra un modal o formulario para editar los datos (ejemplo con un prompt sencillo)
-    const nuevoNombre = prompt("Ingrese el nuevo nombre del producto:", productoAEditar.nombre);
-    // ... otros campos a editar
-
-    // Actualiza los datos del producto
-    productoAEditar.nombre = nuevoNombre;
-    // ... actualiza otros campos
-
-    // Guarda los cambios en el localStorage
-    localStorage.setItem('productos', JSON.stringify(listaProductos));
-
-    // Vuelve a renderizar la tabla
-    crearTabla();
-}
 
 // Inicializar la tabla al cargar la página
 crearTabla();
