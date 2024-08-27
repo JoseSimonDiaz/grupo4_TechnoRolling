@@ -211,20 +211,20 @@ const listaProductos = [
     }
   ];
 
-  const dividirProdutosEnPartes = (size) => {
-    let listaDeProductos = [];
-    for (let i = 0; i < listaProductos.length; i += size) {
-        listaDeProductos.push(listaProductos.slice(i, i + size));
-    }
-    return listaDeProductos;
-};
+//   const dividirProdutosEnPartes = (size) => {
+//     let listaDeProductos = [];
+//     for (let i = 0; i < listaProductos.length; i += size) {
+//         listaDeProductos.push(listaProductos.slice(i, i + size));
+//     }
+//     return listaDeProductos;
+// };
 
-  const limiteDeProductos = {
-    productos: dividirProdutosEnPartes(5),
-    limiteDeProductos: dividirProdutosEnPartes(5).length,
-    productosIndex: 0,
-    filtroActivado: null,
-  }
+//   const limiteDeProductos = {
+//     productos: dividirProdutosEnPartes(5),
+//     limiteDeProductos: dividirProdutosEnPartes(5).length,
+//     productosIndex: 0,
+//     filtroActivado: null,
+//   }
 
   if (!localStorage.getItem('Productos')) { 
     localStorage.setItem('Productos', JSON.stringify(listaProductos));
