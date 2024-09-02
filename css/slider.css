@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+}
+
+#sponsors{
+    background-color: white;
+    height: 150px;
+
+}
+
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    -webkit-animation: scroll 15s linear infinite;
+    width: calc(200px * 20);
+}
+
+.slider .slide {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .slide img {
+    width: auto;
+    height: 150px; /* Ajusta la altura máxima según sea necesario */
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.slider .slide img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 11));
+        -webkit-transform: translateX(calc(-200px * 11));
+    }
+}

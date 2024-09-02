@@ -13,7 +13,14 @@
     />
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="./css/index.css" />
+<<<<<<< HEAD
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/politicas.css">
+=======
     <!-- bootstrap -->
+>>>>>>> 8bb9debfeb0d05a4d4db6dfd3afa0d813d6ffe48
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -38,7 +45,8 @@
       type="image/x-icon"
     />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-    <title>TechnoRolling🖥</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>TechnoRolling</title>
   </head>
 
   <body id="body">
@@ -47,6 +55,63 @@
       id="main"
       class="pb-3 d-flex justify-content-center align-items-center justify-content-center"
     >
+    <!-- navbar -->
+      <nav class="navbar navbar-light position-absolute top-0 end-0 p-3">
+        <div class="container">
+          <div class="d-flex justify-content-end">
+            <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="#destacados">Productos</a></li>
+          <li><a href="/pages/404.html">Contacto</a></li>
+        </ul>
+        <button class="btn-login" id="login-btn" ><a href="./login.html"><i class="icon bi bi-person-fill"></i> Iniciar Sesión</a></button>
+      </nav>
+
+    <!-- Primera Ventana Modal (Consentimiento de Cookies) -->
+    <div id="cookieConsentModal" class="modal">
+        <div class="modal-content">
+            <p>Utilizamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web. Puede personalizar sus preferencias a continuación.</p>
+            <div class="buttons">
+                <button id="customizeBtn" class="btn primary">Saber más y personalizar</button>
+                <button id="rejectBtn" class="btn secondary">Rechazar</button>
+                <button id="acceptBtn" class="btn primary">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segunda Ventana Modal (Personalización de Cookies) -->
+    <div id="privacyOptionsModal" class="modal">
+        <div class="modal-content">
+            <h2>Sus opciones de privacidad</h2>
+            <p>En este panel puede expresar algunas preferencias relacionadas con el tratamiento de sus datos personales...</p>
+            <div class="options">
+                <label><input type="checkbox"> Cookies necesarias (Obligatorias)</label>
+                <label><input type="checkbox"> Cookies de análisis</label>
+                <label><input type="checkbox"> Cookies de publicidad</label>
+                <label><input type="checkbox"> Cookies de redes sociales</label>
+            </div>
+            <div class="buttons">
+                <button id="rejectAllBtn" class="btn secondary">Rechazar todo</button>
+                <button id="saveBtn" class="btn primary">Guardar y continuar</button>
+              </div>
+              <button id="backBtn" class="btnback">Regresar</button>
+        </div>
+    </div>
+
+
+
+    
       <!-- Carousel -->
       <section id="carousel">
         <div
@@ -255,6 +320,66 @@
         />
       </section>
       <!-- opinion clientes-->
+<<<<<<< HEAD
+        <section id="opinion" class="">
+          
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <h2 class="text-center border-bottom border-2">CONOCE LA OPINION DE NUESTROS CLIENTES</h2>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                   <div class="carrouselCard">
+                    <div class="conteiner_img">
+                      <img src="https://www.olavarria.gov.ar/wp-content/uploads/2019/06/Cultura-Teatro-Oficial-Gordillo.jpg" alt="img">
+                    </div>
+                      <div class="iconoestrella">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="textoOpinion">
+                        <p>OFICIAL GORDILLO <br><br>La verdad todo genial, compré una PC y me llegó re bien y muy rápido, tuve la oportunidad de ir al local y son educados y te atienden con la mejor.... </p>
+                      </div>
+                   </div>
+                   <div class="carrouselCard">
+                    <div class="conteiner_img">
+                      <img src="https://yt3.googleusercontent.com/VSFuKb0-Fgh1P1sNbuNwzWUQFiEhO6-d8hFkFDjb3AOGxwWw1WwAXMRhZyYLTq2oi1n3MmbPdQ=s900-c-k-c0x00ffffff-no-rj" alt="img">
+                    </div>
+                      <div class="iconoestrella">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="textoOpinion">
+                        <p>PIÑON FIJO <br><br>La verdad la experiencia 10 puntos
+                          Fui un miércoles a la tarde para armar y pagar la compu que quería y el lunes a la tarde ya la tenían lista.
+                          De ... </p>
+                      </div>
+                   </div>
+                   <div class="carrouselCard">
+                    <div class="conteiner_img">
+                      <img id="img_keanu" src="https://es.web.img2.acsta.net/c_310_420/pictures/17/02/06/17/01/343859.jpg" alt="img">
+                    </div>
+                      <div class="iconoestrella">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="textoOpinion">
+                        <p>JOHN WICK <br><br>Unos genios, desde momento 1 me trataron muy bien y con paciencia sobre todo! soy bastante pregunton, y por encima que no se mucho sobre computadoras ...</p>
+                      </div>
+                   </div>
+=======
       <section id="opinion" class="">
         <div id="carouselExampleIndicators" class="carousel slide">
           <h2 class="text-center border-bottom border-2">
@@ -350,6 +475,7 @@
                     que no se mucho sobre computadoras ...
                   </p>
                 </div>
+>>>>>>> 8bb9debfeb0d05a4d4db6dfd3afa0d813d6ffe48
               </div>
             </div>
           </div>
@@ -374,6 +500,72 @@
         </div>
       </section>
       <!-- nosotros -->
+<<<<<<< HEAD
+      <section id="sponsors">
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/redragon.jpg" alt="redragon">
+                </div>
+                <div class="slide">
+                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_12-10-2022-11-10-56-razer-final.jpg" alt="razer">
+                </div>
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/asus.jpg" alt="asus">
+                </div>
+                <div class="slide">
+                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_27-07-2023-01-07-23-diseno-sin-titulo.jpg" alt="amd">
+                </div>
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/samsung.jpg" alt="samsung">
+                </div>
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/aureox.jpg" alt="aurerox">
+                </div>
+                <div class="slide">
+                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_09-06-2023-12-06-29-corsair-logo.jpg" alt="corsair">
+                </div>
+    
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/hyperx.jpg" alt="hyperx">
+                </div>
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/nvidia.jpg" alt="nvidia">
+                </div>
+    
+                <!-- duplicado -->
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/redragon.jpg" alt="redragon">
+                </div>
+                <div class="slide">
+                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_12-10-2022-11-10-56-razer-final.jpg" alt="razer">
+                </div>
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/asus.jpg" alt="asus">
+                </div>
+                <div class="slide">
+                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_27-07-2023-01-07-23-diseno-sin-titulo.jpg" alt="amd">
+                </div>
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/samsung.jpg" alt="samsung">
+                </div>
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/aureox.jpg" alt="aurerox">
+                </div>
+                <div class="slide">
+                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_09-06-2023-12-06-29-corsair-logo.jpg" alt="corsair">
+                </div>
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/hyperx.jpg" alt="hyperx">
+                </div>
+                <div class="slide">
+                    <img src="https://www.qloud.ar/SITES/MARCAS/nvidia.jpg" alt="nvidia">
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+=======
       <section id="nosotros">
         <h2 class="text-center border-bottom border-2">
           NUESTRO EQUIPO DE DESARROLLO
@@ -441,36 +633,47 @@
           </div>
         </div>
       </section>
+>>>>>>> 8bb9debfeb0d05a4d4db6dfd3afa0d813d6ffe48
     </main>
     <!-- Footer -->
-    <footer id="footer" class="footer mt-auto">
-      <section class="footer-brand">
-        <a href="#">
-          <h3>TECHNOROLLING</h3>
-        </a>
-      </section>
-      <section class="footer-links">
-        <div class="container-fluid">
-          <div class="row d-flex justify-content-between text-center">
-            <div class="col-lg-3 col-sm-12 text-center anc-footer">
-              <a href="#">Inicio</a>
-            </div>
-
-            <div class="col-lg-6 col-sm-12 text-center anc-footer">
-              <a href="./pages/nosotros.html">Sobre Nosotros</a>
-            </div>
-            <div class="col-lg-3 col-sm-12 text-centeranc-footer">
-              <a href="./pages/404.html">Contactanos</a>
-            </div>
+    <footer>
+      <div class="footer-container">
+          <div class="footer-column">
+              <h3>Compañía</h3>
+              <ul>
+                  <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                  <li><a href="https://www.google.com/maps/place/RollingCode+School/@-26.8365833,-65.2097419,17z/data=!3m1!4b1!4m6!3m5!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8365833!4d-65.207167!16s%2Fg%2F11h0b4kn08?hl=es&entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D">Nuestra dirección</a></li>
+                  <li><a href="/pages/404.html">Política De Privacidad</a></li>
+                  <li><a href="/pages/login.html">Afíliate</a></li>
+              </ul>
           </div>
-        </div>
-      </section>
-      <section class="footer-copyright">
-        <span class="copyright"
-          >2024 &copy; TechnoRolling - Derechos Reservados</span
-        >
-      </section>
-    </footer>
+          <div class="footer-column">
+              <h3>Ayuda</h3>
+              <ul>
+                  <li><a href="/pages/404.html">Preguntas</a></li>
+                  <li><a href="/pages/404.html">Compras</a></li>
+                  <li><a href="/pages/404.html">Envíos</a></li>
+                  <li><a href="/pages/404.html">Pago</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Tienda</h3>
+              <ul>
+                  <li><a href="#destacados">Productos</a></li>
+                  <li><a href="#sponsors">Sponsors</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Síguenos</h3>
+              <ul class="social-icons">
+                  <li><a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a></li>
+                  <li><a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
     <!-- Modal -->
     <div
       class="modal fade"
@@ -516,5 +719,9 @@
     <script src="./js/data.js"></script>
     <!-- paginaPrincipal.js-->
     <script src="./js/paginaPrincipal.js"></script>
+    <!-- script navbar -->
+     <script src="/js/navbar.js"></script>
+     <!-- script politica -->
+     <script src="/js/politica.js"></script>
   </body>
 </html>
