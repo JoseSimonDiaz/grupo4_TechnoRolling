@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no cause overflow */
+}
+
+:root{
+    --maincolor: #1E50FF;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan si es necesario */
+    box-sizing: border-box;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 250px; /* Asegura que las columnas no sean demasiado estrechas */
+    box-sizing: border-box;
+}
+
+.footer-column h3 {
+    color: var(--maincolor);
+    border-bottom: 2px solid var(--maincolor);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: auto; /* Ajusta automáticamente el ancho */
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: var(--maincolor);
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Media Query específica para Tablets (iPad Mini) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-container {
+        flex-direction: row; /* Mantiene el layout en fila */
+        justify-content: space-between; /* Asegura que el contenido ocupe todo el ancho */
+        text-align: left; /* Texto alineado a la izquierda */
+        padding: 0 20px; /* Añade padding lateral */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        margin: 0; /* Evita margen extra */
+    }
+
+    .footer-column {
+        flex: 1;
+        margin: 0 10px;
+        width: calc(33.33% - 20px); /* Ajuste para asegurar que las columnas se distribuyan correctamente */
+    }
+
+    .social-icons {
+        justify-content: center; /* Centra los iconos sociales */
+        position: relative;
+        right: 142px;
+    }
+}
+
+/* Media Query específica para Móviles */
+@media (max-width: 767px) {
+    .footer-container {
+        flex-direction: row; /* Cambia a disposición vertical */
+        text-align: center; /* Texto centrado */
+        font-size: 1.2rem; /* Tamaño de fuente reducido para pantallas más pequeñas */
+        padding: 0 20px; /* Añade padding lateral para evitar overflow */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        margin: 0; /* Evita margen extra */
+    }
+
+    .footer-column {
+        margin-bottom: 20px; /* Espacio entre columnas */
+        width: 100%; /* Asegura que las columnas tomen todo el ancho disponible */
+    }
+
+    .social-icons {
+        justify-content: center; /* Centra los iconos sociales */
+    }
+}

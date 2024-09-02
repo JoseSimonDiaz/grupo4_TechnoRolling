@@ -38,8 +38,4 @@ productIdHTML.innerHTML += `
      
 };
 
-
-
-
 renderProduct();
-

@@ -1,0 +1,85 @@
+/* Estilos Generales del Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    height: 34px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background-color: #1E90FF;
+    color: white;
+}
+
+
+.btn.secondary {
+    background-color: #ed6868;
+    color: #ffffff;
+}
+
+.options {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btnback{
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #535353;
+    height: 20px;
+    color: white;
+    height: 25px;
+}
+
+#acceptBtn{
+    background-color: #008f39;
+}
