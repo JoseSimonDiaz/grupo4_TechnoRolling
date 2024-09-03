@@ -12,12 +12,19 @@
     align-items: center;
 }
 
+.conteinerLogo img{
+    width: 100px;
+    /* filter: drop-shadow(0 0 0.75rem #1E90FF); */
+    filter: drop-shadow(0 0 0.75rem rgba(0,0,0, .8));
+}
+
 .modal-content {
     background-color: #ffffff;
     padding: 20px;
+    margin: 10px;
     border-radius: 10px;
     max-width: 600px;
-    width: 90%;
+    width: 100%;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -26,13 +33,17 @@
     font-size: 24px;
     color: #333333;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .modal-content p {
     font-size: 16px;
     color: #555555;
     margin-bottom: 20px;
+    font-weight: 600;
 }
+
+
 
 .buttons {
     display: flex;
@@ -53,21 +64,38 @@
     color: white;
 }
 
+.btn.primary:hover{
+    background-color: #1e8fff63;
+    color: white;
+}
+
 
 .btn.secondary {
     background-color: #ed6868;
     color: #ffffff;
 }
 
-.options {
-    text-align: left;
-    margin-bottom: 20px;
+.btn.secondary:hover{
+    background-color: rgba(255, 0, 0, 0.397);
+    color: white;
 }
 
-label {
+.options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.options label {
     display: block;
     margin-bottom: 10px;
 }
+
 
 .btnback{
     position: relative;
@@ -83,3 +111,4 @@ label {
 #acceptBtn{
     background-color: #008f39;
 }
+

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="technoRolling" />
-    <meta name="description" content="Venta de componentes de pc y perifericos" />
+    <meta
+      name="description"
+      content="Venta de componentes de pc y perifericos"
+    />
     <meta
       name="keywords"
       content="pc, componentes, tecnologia, notebook,gamer "
@@ -23,15 +26,95 @@
       rel="stylesheet"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/detalleDeProducto.css">
-     <!-- favicon -->
+    <link rel="stylesheet" href="../css/detalleDeProducto.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+
+    <!-- favicon -->
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
     <title>TechnoRolling🖥 | Detalle de producto</title>
   </head>
   <body id="body">
-       <header id='header'></header>
-       <main id='main' >
-          <!-- <section class="detalleProducto">
+    <header id="header" class="">
+      <!-- navbar -->
+      <nav class="navbar navbar-light position-absolute top-0 end-0 p-3">
+        <div class="container">
+          <div class="d-flex justify-content-end">
+            <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="#destacados">Productos</a></li>
+          <li><a href="/pages/404.html">Contacto</a></li>
+        </ul>
+        <button class="btn-login" id="login-btn">
+          <a href="./login.html"
+            ><i class="icon bi bi-person-fill"></i> Iniciar Sesión</a
+          >
+        </button>
+      </nav>
+
+      <!-- Primera Ventana Modal (Consentimiento de Cookies) -->
+      <div id="cookieConsentModal" class="modal">
+        <div class="modal-content">
+          <div class="conteinerLogo">
+            <img src="./assets/logo.png" alt="imgLogo" />
+          </div>
+          <p>
+            Utilizamos cookies y tecnologías similares para mejorar su
+            experiencia en nuestro sitio web. Puede personalizar sus
+            preferencias a continuación.
+          </p>
+          <div class="buttons">
+            <button id="customizeBtn" class="btn primary">
+              Saber más y personalizar
+            </button>
+            <button id="rejectBtn" class="btn secondary">Rechazar</button>
+            <button id="acceptBtn" class="btn primary">Aceptar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Segunda Ventana Modal (Personalización de Cookies) -->
+      <div id="privacyOptionsModal" class="modal">
+        <div class="modal-content">
+          <h2>Sus opciones de privacidad</h2>
+          <p>
+            En este panel puede expresar algunas preferencias relacionadas con
+            el tratamiento de sus datos personales...
+          </p>
+          <div class="options">
+            <label
+              ><input type="checkbox" /> Cookies necesarias
+              (Obligatorias)</label
+            >
+            <label><input type="checkbox" /> Cookies de análisis</label>
+            <label><input type="checkbox" /> Cookies de publicidad</label>
+            <label><input type="checkbox" /> Cookies de redes sociales</label>
+          </div>
+          <div class="buttons">
+            <button id="rejectAllBtn" class="btn secondary">
+              Rechazar todo
+            </button>
+            <button id="saveBtn" class="btn primary">
+              Guardar y continuar
+            </button>
+          </div>
+          <button id="backBtn" class="btnback">Regresar</button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <!-- <section class="detalleProducto">
                 <div class="conteiner_image">
                   <img src="" alt="imagenProduct">                  
                 </div>
@@ -50,38 +133,69 @@
                         </div>
                     </div>
           </section> -->
-          <div id="productId"></div>
-       </main>
-       <footer id="footer" class="footer mt-auto">
-        <section class="footer-brand">
-          <a href="#">
-            <h3>TECHNOROLLING</h3>
-          </a>
-        </section>
-        <section class="footer-links">
-          <div class="container-fluid">
-            <div class="row d-flex justify-content-between text-center">
-              <div class="col-lg-3 col-sm-12 text-center anc-footer">
-                <a href="../index.html">Inicio</a>
-              </div>
-  
-              <div class="col-lg-6 col-sm-12 text-center anc-footer">
-                <a href="../pages/nosotros.html">Sobre Nosotros</a>
-              </div>
-              <div class="col-lg-3 col-sm-12 text-centeranc-footer">
-                <a href="../pages/404.html">Contactanos</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="footer-copyright">
-          <span class="copyright"
-            >2024 &copy; TechnoRolling - Derechos Reservados</span
-          >
-        </section>
-      </footer>
-       <script src="../js/data.js"></script>
-       <script src="../js/productDetail.js">
-       </script>
+      <div id="productId"></div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Compañía</h3>
+          <ul>
+            <li><a href="/pages/nosotros.html">Nosotros</a></li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/RollingCode+School/@-26.8365833,-65.2097419,17z/data=!3m1!4b1!4m6!3m5!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8365833!4d-65.207167!16s%2Fg%2F11h0b4kn08?hl=es&entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D"
+                >Nuestra dirección</a
+              >
+            </li>
+            <li><a href="/pages/404.html">Política De Privacidad</a></li>
+            <li><a href="/pages/login.html">Afíliate</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Ayuda</h3>
+          <ul>
+            <li><a href="/pages/404.html">Preguntas</a></li>
+            <li><a href="/pages/404.html">Compras</a></li>
+            <li><a href="/pages/404.html">Envíos</a></li>
+            <li><a href="/pages/404.html">Pago</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Tienda</h3>
+          <ul>
+            <li><a href="#destacados">Productos</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Síguenos</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/data.js"></script>
+    <script src="../js/productDetail.js"></script>
+    <!-- script navbar -->
+    <script src="../js/navbar.js"></script>
   </body>
 </html>
