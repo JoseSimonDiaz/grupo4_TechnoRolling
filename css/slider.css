@@ -1,6 +1,4 @@
-body{
-    background-color: black;
-}
+
 
 #sponsors{
     background-color: white;
@@ -9,7 +7,7 @@ body{
 }
 
 .slider {
-    width: 75vw;
+    width: 79vw;
     height: auto;
     margin: auto;
     overflow: hidden;

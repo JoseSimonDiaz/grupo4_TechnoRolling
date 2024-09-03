@@ -1,59 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="technoRolling" />
-    <meta
-      name="description"
-      content="Venta de componentes de pc y perifericos"
-    />
-    <meta
-      name="keywords"
-      content="pc, componentes, tecnologia, notebook,gamer "
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/slider.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/politicas.css">
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- favicon -->
-    <link
-      rel="shortcut icon"
-      href="./assets/favicon/favicon-32x32.png"
-      type="image/x-icon"
-    />
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>TechnoRolling</title>
-  </head>
 
-  <body id="body">
-    <header id="header" class=""></header>
-    <main
-      id="main"
-      class="pb-3 d-flex justify-content-center align-items-center justify-content-center"
-    >
-    <!-- navbar -->
-      <nav class="navbar navbar-light position-absolute top-0 end-0 p-3">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="technoRolling" />
+  <meta name="description" content="Venta de componentes de pc y perifericos" />
+  <meta name="keywords" content="pc, componentes, tecnologia, notebook,gamer " />
+  <meta name="robots" content="index, follow" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/slider.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/politicas.css">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon/favicon-32x32.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>TechnoRolling</title>
+</head>
+
+<body id="body">
+  <header id="header" class="">
+       <!-- navbar -->
+       <nav class="navbar navbar-light position-absolute top-0 end-0 p-3">
         <div class="container">
           <div class="d-flex justify-content-end">
             <div class="hamburger" id="hamburger">
@@ -64,7 +42,7 @@
           </div>
         </div>
       </nav>
-
+  
       <nav class="nav-menu" id="nav-menu">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
@@ -72,167 +50,145 @@
           <li><a href="#destacados">Productos</a></li>
           <li><a href="/pages/404.html">Contacto</a></li>
         </ul>
-        <button class="btn-login" id="login-btn" ><a href="./login.html"><i class="icon bi bi-person-fill"></i> Iniciar Sesión</a></button>
+        <button class="btn-login" id="login-btn"><a href="./login.html"><i class="icon bi bi-person-fill"></i> Iniciar
+            Sesión</a></button>
       </nav>
-
-    <!-- Primera Ventana Modal (Consentimiento de Cookies) -->
-    <div id="cookieConsentModal" class="modal">
+  
+      <!-- Primera Ventana Modal (Consentimiento de Cookies) -->
+      <div id="cookieConsentModal" class="modal">
         <div class="modal-content">
-            <p>Utilizamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web. Puede personalizar sus preferencias a continuación.</p>
-            <div class="buttons">
-                <button id="customizeBtn" class="btn primary">Saber más y personalizar</button>
-                <button id="rejectBtn" class="btn secondary">Rechazar</button>
-                <button id="acceptBtn" class="btn primary">Aceptar</button>
-            </div>
+          <div class="conteinerLogo">
+            <img src="./assets/logo.png" alt="imgLogo">
+          </div>
+          <p>Utilizamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web. Puede
+            personalizar sus preferencias a continuación.</p>
+          <div class="buttons">
+            <button id="customizeBtn" class="btn primary">Saber más y personalizar</button>
+            <button id="rejectBtn" class="btn secondary">Rechazar</button>
+            <button id="acceptBtn" class="btn primary">Aceptar</button>
+  
+          </div>
         </div>
-    </div>
-    <!-- Segunda Ventana Modal (Personalización de Cookies) -->
-    <div id="privacyOptionsModal" class="modal">
+      </div>
+  
+      <!-- Segunda Ventana Modal (Personalización de Cookies) -->
+      <div id="privacyOptionsModal" class="modal">
         <div class="modal-content">
-            <h2>Sus opciones de privacidad</h2>
-            <p>En este panel puede expresar algunas preferencias relacionadas con el tratamiento de sus datos personales...</p>
-            <div class="options">
-                <label><input type="checkbox"> Cookies necesarias (Obligatorias)</label>
-                <label><input type="checkbox"> Cookies de análisis</label>
-                <label><input type="checkbox"> Cookies de publicidad</label>
-                <label><input type="checkbox"> Cookies de redes sociales</label>
-            </div>
-            <div class="buttons">
-                <button id="rejectAllBtn" class="btn secondary">Rechazar todo</button>
-                <button id="saveBtn" class="btn primary">Guardar y continuar</button>
-              </div>
-              <button id="backBtn" class="btnback">Regresar</button>
-        </div>
-    </div>
-      <!-- Carousel -->
-      <section id="carousel">
-        <div
-          id="carouselExample"
-          data-bs-ride="carousel"
-          data-bs-interval="6000"
-          class="carousel slide"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_31-01-2024-10-01-22-banner-pc.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_22-01-2024-12-01-47-este.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_07-02-2024-09-02-54-crsr-h2-k70-hs80-es-1920x400.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_18-04-2024-12-04-02-1920x400-m-m-computacion-productos.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
+          <div class="conteinerLogo">
+            <img src="./assets/logo.png" alt="imgLogo">
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <h2>Sus opciones de privacidad</h2>
+          <p>En este panel puede expresar algunas preferencias relacionadas con el tratamiento de sus datos personales...
+          </p>
+          <div class="options">
+            <label><input type="checkbox"> Cookies necesarias (Obligatorias)</label>
+            <label><input type="checkbox"> Cookies de análisis</label>
+            <label><input type="checkbox"> Cookies de publicidad</label>
+            <label><input type="checkbox"> Cookies de redes sociales</label>
+          </div>
+          <div class="buttons">
+            <button id="rejectAllBtn" class="btn secondary">Rechazar todo</button>
+            <button id="saveBtn" class="btn primary">Guardar y continuar</button>
+          </div>
+          <button id="backBtn" class="btnback">Regresar</button>
         </div>
-      </section>
-      <section id="setup">
-        <div class="setup-text">
-          <h1 class="text-center">
-            Personaliza tu setup gamer con nuestros mejores
-            <span>Perifericos</span>
-          </h1>
-        </div>
-        <div class="setup-IMG">
-          <div class="IMG1">
+      </div>
+  </header>
+  <main id="main" class="pb-3 d-flex justify-content-center align-items-center justify-content-center">
+ 
+    <!-- Carousel -->
+    <section id="carousel">
+      <div id="carouselExample" data-bs-ride="carousel" data-bs-interval="6000" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_31-01-2024-10-01-22-banner-pc.jpg"
+              class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_22-01-2024-12-01-47-este.jpg"
+              class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
             <img
-              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_08-01-2024-08-01-20-redra.jpg"
-              alt="SetUp"
-            />
+              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_07-02-2024-09-02-54-crsr-h2-k70-hs80-es-1920x400.jpg"
+              class="d-block w-100" alt="..." />
           </div>
-          <div class="IMG2">
+          <div class="carousel-item">
             <img
-              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_08-01-2024-08-01-02-coo.jpg"
-              alt="SetUp"
-            />
+              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_18-04-2024-12-04-02-1920x400-m-m-computacion-productos.jpg"
+              class="d-block w-100" alt="..." />
           </div>
         </div>
-      </section>
-      <!-- Todos los productos -->
-      <section id="destacados" class="mb-3 text-center">
-        <h2 class="text-center border-bottom border-2">NUESTRO PRODUCTOS</h2>
-        <div class="search">
-          <form id="form-search">
-            <input
-              id="search"
-              type="search"
-              placeholder="Buscar productos..."
-              aria-label="Buscar"
-            />
-            <button type="submit">
-              <i class="bx bx-search bx-sm"></i>
-            </button>
-          </form>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="setup">
+      <div class="setup-text">
+        <h1 class="text-center">
+          Personaliza tu setup gamer con nuestros mejores
+          <span>Perifericos</span>
+        </h1>
+      </div>
+      <div class="setup-IMG">
+        <div class="IMG1">
+          <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_08-01-2024-08-01-20-redra.jpg" alt="SetUp" />
         </div>
-        <div class="categoriasProductos">
-          <button class="categorias activado" data-category="Todo">Todo</button>
-          <button class="categorias" data-category="Procesadores">
-            Procesadores
-          </button>
-          <button class="categorias" data-category="Placas Madre">
-            Placa madre
-          </button>
-          <button class="categorias" data-category="Memorias RAM">
-            Memorias Ram
-          </button>
-          <button class="categorias" data-category="Almacenamiento">
-            Almacenamiento
-          </button>
-          <button class="categorias" data-category="Placas de Video">
-            Placa de Video
-          </button>
-          <button class="categorias" data-category="gabientes">
-            Gabinetes
-          </button>
-          <button class="categorias" data-category="monitor">Monitores</button>
-          <button class="categorias" data-category="Fuentes de Poder">
-            Fuentes
-          </button>
-          <button class="categorias" data-category="refrigeracion">
-            Refrigeracion liquida
-          </button>
-          <button class="categorias" data-category="perifericos">
-            Perifericos
-          </button>
+        <div class="IMG2">
+          <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_08-01-2024-08-01-02-coo.jpg" alt="SetUp" />
         </div>
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 m-3">
-          <!-- <div class="col ">
+      </div>
+    </section>
+    <!-- Todos los productos -->
+    <section id="destacados" class="mb-3 text-center">
+      <h2 class="text-center border-bottom border-2">NUESTRO PRODUCTOS</h2>
+      <div class="search">
+        <form id="form-search">
+          <input id="search" type="search" placeholder="Buscar productos..." aria-label="Buscar" />
+          <button type="submit">
+            <i class="bx bx-search bx-sm"></i>
+          </button>
+        </form>
+      </div>
+      <div class="categoriasProductos">
+        <button class="categorias activado" data-category="Todo">Todo</button>
+        <button class="categorias" data-category="Procesadores">
+          Procesadores
+        </button>
+        <button class="categorias" data-category="Placas Madre">
+          Placa madre
+        </button>
+        <button class="categorias" data-category="Memorias RAM">
+          Memorias Ram
+        </button>
+        <button class="categorias" data-category="Almacenamiento">
+          Almacenamiento
+        </button>
+        <button class="categorias" data-category="Placas de Video">
+          Placa de Video
+        </button>
+        <button class="categorias" data-category="gabientes">
+          Gabinetes
+        </button>
+        <button class="categorias" data-category="monitor">Monitores</button>
+        <button class="categorias" data-category="Fuentes de Poder">
+          Fuentes
+        </button>
+        <button class="categorias" data-category="refrigeracion">
+          Refrigeracion liquida
+        </button>
+        <button class="categorias" data-category="perifericos">
+          Perifericos
+        </button>
+      </div>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 m-3">
+        <!-- <div class="col ">
             <div class="card" >
               <img
                 src="https://www.qloud.ar/SITES/IMG/m-y-m-computacion-06-2020/tumb_148_23-12-2022-05-12-06-0000000000000840006626633_1.png"
@@ -299,415 +255,355 @@
               </div>
             </div>
           </div> -->
-        </div>
-        <div class="container-button">
-          <button class="verMas">VER MAS</button>
-        </div>
-      </section>
-      <!-- img asus -->
-      <section id="img_asus">
-        <img
-          src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_08-01-2024-06-01-59-asus.jpg"
-          alt=""
-        />
-      </section>
-      <!-- opinion clientes-->
-        <section id="opinion" class="">
-          
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <h2 class="text-center border-bottom border-2">CONOCE LA OPINION DE NUESTROS CLIENTES</h2>
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner ">
-              <div class="carousel-item active">
-                   <div class="carrouselCard">
-                    <div class="conteiner_img">
-                      <img src="https://www.olavarria.gov.ar/wp-content/uploads/2019/06/Cultura-Teatro-Oficial-Gordillo.jpg" alt="img">
-                    </div>
-                      <div class="iconoestrella">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                      </div>
-                      <div class="textoOpinion">
-                        <p>OFICIAL GORDILLO <br><br>La verdad todo genial, compré una PC y me llegó re bien y muy rápido, tuve la oportunidad de ir al local y son educados y te atienden con la mejor.... </p>
-                      </div>
-                   </div>
-                   <div class="carrouselCard">
-                    <div class="conteiner_img">
-                      <img src="https://yt3.googleusercontent.com/VSFuKb0-Fgh1P1sNbuNwzWUQFiEhO6-d8hFkFDjb3AOGxwWw1WwAXMRhZyYLTq2oi1n3MmbPdQ=s900-c-k-c0x00ffffff-no-rj" alt="img">
-                    </div>
-                      <div class="iconoestrella">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                      </div>
-                      <div class="textoOpinion">
-                        <p>PIÑON FIJO <br><br>La verdad la experiencia 10 puntos
-                          Fui un miércoles a la tarde para armar y pagar la compu que quería y el lunes a la tarde ya la tenían lista.
-                          De ... </p>
-                      </div>
-                   </div>
-                   <div class="carrouselCard">
-                    <div class="conteiner_img">
-                      <img id="img_keanu" src="https://es.web.img2.acsta.net/c_310_420/pictures/17/02/06/17/01/343859.jpg" alt="img">
-                    </div>
-                      <div class="iconoestrella">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                      </div>
-                      <div class="textoOpinion">
-                        <p>JOHN WICK <br><br>Unos genios, desde momento 1 me trataron muy bien y con paciencia sobre todo! soy bastante pregunton, y por encima que no se mucho sobre computadoras ...</p>
-                      </div>
-                   </div>
-      <section id="opinion" class="">
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <h2 class="text-center border-bottom border-2">
-            CONOCE LA OPINION DE NUESTROS CLIENTES
-          </h2>
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carrouselCard">
-                <div class="conteiner_img">
-                  <img
-                    src="https://www.olavarria.gov.ar/wp-content/uploads/2019/06/Cultura-Teatro-Oficial-Gordillo.jpg"
-                    alt="img"
-                  />
-                </div>
-                <div class="iconoestrella">
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </div>
-                <div class="textoOpinion">
-                  <p>
-                    La verdad todo genial, compré una PC y me llegó re bien y
-                    muy rápido, tuve la oportunidad de ir al local y son
-                    educados y te atienden con la mejor....
-                  </p>
-                </div>
-              </div>
-              <div class="carrouselCard">
-                <div class="conteiner_img">
-                  <img
-                    src="https://yt3.googleusercontent.com/VSFuKb0-Fgh1P1sNbuNwzWUQFiEhO6-d8hFkFDjb3AOGxwWw1WwAXMRhZyYLTq2oi1n3MmbPdQ=s900-c-k-c0x00ffffff-no-rj"
-                    alt="img"
-                  />
-                </div>
-                <div class="iconoestrella">
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </div>
-                <div class="textoOpinion">
-                  <p>
-                    La verdad la experiencia 10 puntos Fui un miércoles a la
-                    tarde para armar y pagar la compu que quería y el lunes a la
-                    tarde ya la tenían lista. De ...
-                  </p>
-                </div>
-              </div>
-              <div class="carrouselCard">
-                <div class="conteiner_img">
-                  <img
-                    id="img_keanu"
-                    src="https://es.web.img2.acsta.net/c_310_420/pictures/17/02/06/17/01/343859.jpg"
-                    alt="img"
-                  />
-                </div>
-                <div class="iconoestrella">
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                  <i class="bx bxs-star"></i>
-                </div>
-                <div class="textoOpinion">
-                  <p>
-                    Unos genios, desde momento 1 me trataron muy bien y con
-                    paciencia sobre todo! soy bastante pregunton, y por encima
-                    que no se mucho sobre computadoras ...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section id="sponsors">
-        <div class="slider">
-            <div class="slide-track">
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/redragon.jpg" alt="redragon">
-                </div>
-                <div class="slide">
-                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_12-10-2022-11-10-56-razer-final.jpg" alt="razer">
-                </div>
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/asus.jpg" alt="asus">
-                </div>
-                <div class="slide">
-                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_27-07-2023-01-07-23-diseno-sin-titulo.jpg" alt="amd">
-                </div>
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/samsung.jpg" alt="samsung">
-                </div>
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/aureox.jpg" alt="aurerox">
-                </div>
-                <div class="slide">
-                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_09-06-2023-12-06-29-corsair-logo.jpg" alt="corsair">
-                </div>
-    
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/hyperx.jpg" alt="hyperx">
-                </div>
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/nvidia.jpg" alt="nvidia">
-                </div>
-    
-                <!-- duplicado -->
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/redragon.jpg" alt="redragon">
-                </div>
-                <div class="slide">
-                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_12-10-2022-11-10-56-razer-final.jpg" alt="razer">
-                </div>
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/asus.jpg" alt="asus">
-                </div>
-                <div class="slide">
-                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_27-07-2023-01-07-23-diseno-sin-titulo.jpg" alt="amd">
-                </div>
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/samsung.jpg" alt="samsung">
-                </div>
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/aureox.jpg" alt="aurerox">
-                </div>
-                <div class="slide">
-                    <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_09-06-2023-12-06-29-corsair-logo.jpg" alt="corsair">
-                </div>
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/hyperx.jpg" alt="hyperx">
-                </div>
-                <div class="slide">
-                    <img src="https://www.qloud.ar/SITES/MARCAS/nvidia.jpg" alt="nvidia">
-                </div>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="container-button">
+        <button class="verMas">VER MAS</button>
+      </div>
     </section>
-      <!-- nosotros -->
-      <section id="nosotros">
-        <h2 class="text-center border-bottom border-2">
-          NUESTRO EQUIPO DE DESARROLLO
-        </h2>
-        <div class="contenedor_nosotros">
-          <div class="nosotros-card">
-            <div class="nosotros-img">
-              <img
-                src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg"
-                alt="img"
-              />
-            </div>
-            <div class="nosotros-text">
-              <h3>Brian Tomas Ojeda</h3>
-              <p>Full Stack Developer</p>
-            </div>
-          </div>
-          <div class="nosotros-card">
-            <div class="nosotros-img">
-              <img
-                src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg"
-                alt="img"
-              />
-            </div>
-            <div class="nosotros-text">
-              <h3>Franco Funes</h3>
-              <p>Full Stack Developer</p>
-            </div>
-          </div>
-          <div class="nosotros-card">
-            <div class="nosotros-img">
-              <img
-                src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg"
-                alt="img"
-              />
-            </div>
-            <div class="nosotros-text">
-              <h3>Jose Simon Diaz</h3>
-              <p>Full Stack Developer</p>
-            </div>
-          </div>
-          <div class="nosotros-card">
-            <div class="nosotros-img">
-              <img
-                src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg"
-                alt="img"
-              />
-            </div>
-            <div class="nosotros-text">
-              <h3>Joaquin García Fernández</h3>
-              <p>Full Stack Developer</p>
-            </div>
-          </div>
-          <div class="nosotros-card">
-            <div class="nosotros-img">
-              <img
-                src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg"
-                alt="img"
-              />
-            </div>
-            <div class="nosotros-text">
-              <h3>David Nicolas Rodriguez</h3>
-              <p>Full Stack Developer</p>
-            </div>
-          </div>
+    <!-- img asus -->
+    <section id="img_asus">
+      <img src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_08-01-2024-06-01-59-asus.jpg" alt="" />
+    </section>
+    <!-- opinion clientes-->
+    <section id="opinion" class="">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <h2 class="text-center border-bottom border-2">CONOCE LA OPINION DE NUESTROS CLIENTES</h2>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-          <div class="footer-column">
-              <h3>Compañía</h3>
-              <ul>
-                  <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                  <li><a href="https://www.google.com/maps/place/RollingCode+School/@-26.8365833,-65.2097419,17z/data=!3m1!4b1!4m6!3m5!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8365833!4d-65.207167!16s%2Fg%2F11h0b4kn08?hl=es&entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D">Nuestra dirección</a></li>
-                  <li><a href="/pages/404.html">Política De Privacidad</a></li>
-                  <li><a href="/pages/login.html">Afíliate</a></li>
-              </ul>
-          </div>
-          <div class="footer-column">
-              <h3>Ayuda</h3>
-              <ul>
-                  <li><a href="/pages/404.html">Preguntas</a></li>
-                  <li><a href="/pages/404.html">Compras</a></li>
-                  <li><a href="/pages/404.html">Envíos</a></li>
-                  <li><a href="/pages/404.html">Pago</a></li>
-              </ul>
-          </div>
-          <div class="footer-column">
-              <h3>Tienda</h3>
-              <ul>
-                  <li><a href="#destacados">Productos</a></li>
-                  <li><a href="#sponsors">Sponsors</a></li>
-              </ul>
-          </div>
-          <div class="footer-column">
-              <h3>Síguenos</h3>
-              <ul class="social-icons">
-                  <li><a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
-                  <li><a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a></li>
-                  <li><a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a></li>
-              </ul>
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <div class="carrouselCard">
+              <div class="conteiner_img">
+                <img src="https://www.olavarria.gov.ar/wp-content/uploads/2019/06/Cultura-Teatro-Oficial-Gordillo.jpg"
+                  alt="img">
+              </div>
+              <div class="iconoestrella">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+              <div class="textoOpinion">
+                <p>OFICIAL GORDILLO <br><br>La verdad todo genial, compré una PC y me llegó re bien y muy rápido, tuve
+                  la oportunidad de ir al local y son educados y te atienden con la mejor.... </p>
+              </div>
+            </div>
+            <div class="carrouselCard">
+              <div class="conteiner_img">
+                <img
+                  src="https://yt3.googleusercontent.com/VSFuKb0-Fgh1P1sNbuNwzWUQFiEhO6-d8hFkFDjb3AOGxwWw1WwAXMRhZyYLTq2oi1n3MmbPdQ=s900-c-k-c0x00ffffff-no-rj"
+                  alt="img">
+              </div>
+              <div class="iconoestrella">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+              <div class="textoOpinion">
+                <p>PIÑON FIJO <br><br>La verdad la experiencia 10 puntos
+                  Fui un miércoles a la tarde para armar y pagar la compu que quería y el lunes a la tarde ya la tenían
+                  lista.
+                  De ... </p>
+              </div>
+            </div>
+            <div class="carrouselCard">
+              <div class="conteiner_img">
+                <img id="img_keanu" src="https://es.web.img2.acsta.net/c_310_420/pictures/17/02/06/17/01/343859.jpg"
+                  alt="img">
+              </div>
+              <div class="iconoestrella">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+              <div class="textoOpinion">
+                <p>JOHN WICK <br><br>Unos genios, desde momento 1 me trataron muy bien y con paciencia sobre todo! soy
+                  bastante pregunton, y por encima que no se mucho sobre computadoras ...</p>
+              </div>
+            </div>
+           
+            <!-- nosotros -->
+            <section >
+
           </div>
       </div>
+    </section>
+    <!-- sponsors -->
+    <section id="sponsors" class="mb-3">
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/redragon.jpg" alt="redragon">
+          </div>
+          <div class="slide">
+            <img
+              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_12-10-2022-11-10-56-razer-final.jpg"
+              alt="razer">
+          </div>
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/asus.jpg" alt="asus">
+          </div>
+          <div class="slide">
+            <img
+              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_27-07-2023-01-07-23-diseno-sin-titulo.jpg"
+              alt="amd">
+          </div>
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/samsung.jpg" alt="samsung">
+          </div>
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/aureox.jpg" alt="aurerox">
+          </div>
+          <div class="slide">
+            <img
+              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_09-06-2023-12-06-29-corsair-logo.jpg"
+              alt="corsair">
+          </div>
+
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/hyperx.jpg" alt="hyperx">
+          </div>
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/nvidia.jpg" alt="nvidia">
+          </div>
+
+          <!-- duplicado -->
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/redragon.jpg" alt="redragon">
+          </div>
+          <div class="slide">
+            <img
+              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_12-10-2022-11-10-56-razer-final.jpg"
+              alt="razer">
+          </div>
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/asus.jpg" alt="asus">
+          </div>
+          <div class="slide">
+            <img
+              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_27-07-2023-01-07-23-diseno-sin-titulo.jpg"
+              alt="amd">
+          </div>
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/samsung.jpg" alt="samsung">
+          </div>
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/aureox.jpg" alt="aurerox">
+          </div>
+          <div class="slide">
+            <img
+              src="https://statics.qloud.ar/m-y-m-computacion-06-2020/148_09-06-2023-12-06-29-corsair-logo.jpg"
+              alt="corsair">
+          </div>
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/hyperx.jpg" alt="hyperx">
+          </div>
+          <div class="slide">
+            <img src="https://www.qloud.ar/SITES/MARCAS/nvidia.jpg" alt="nvidia">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- equipo -->
+    <section id="nosotros">
+      <h2 class="text-center border-bottom border-2">
+        NUESTRO EQUIPO DE DESARROLLO
+      </h2>
+      <div class="contenedor_nosotros">
+        <div class="nosotros-card">
+          <div class="nosotros-img">
+            <img src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg" alt="img" />
+          </div>
+          <div class="nosotros-text">
+            <h3>Brian Tomas Ojeda</h3>
+            <p>Full Stack Developer</p>
+          </div>
+        </div>
+        <div class="nosotros-card">
+          <div class="nosotros-img">
+            <img src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg" alt="img" />
+          </div>
+          <div class="nosotros-text">
+            <h3>Franco Funes</h3>
+            <p>Full Stack Developer</p>
+          </div>
+        </div>
+        <div class="nosotros-card">
+          <div class="nosotros-img">
+            <img src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg" alt="img" />
+          </div>
+          <div class="nosotros-text">
+            <h3>Jose Simon Diaz</h3>
+            <p>Full Stack Developer</p>
+          </div>
+        </div>
+        <div class="nosotros-card">
+          <div class="nosotros-img">
+            <img src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg" alt="img" />
+          </div>
+          <div class="nosotros-text">
+            <h3>Joaquin García Fernández</h3>
+            <p>Full Stack Developer</p>
+          </div>
+        </div>
+        <div class="nosotros-card">
+          <div class="nosotros-img">
+            <img src="https://i.pinimg.com/564x/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg" alt="img" />
+          </div>
+          <div class="nosotros-text">
+            <h3>David Nicolas Rodriguez</h3>
+            <p>Full Stack Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contactar -->
+    <section id="contactanos" class="mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col p-3">
+            <h3 class="text-center p-1">Contacto</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 order-1 order-md-0 my-3">
+            <!-- formulario -->
+            <form>
+              <div class="mb-3">
+                <label for="correo" class="form-label fw-bold"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correo"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-bold">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Ej: Cosme Fulanito"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label fw-bold"
+                  >Mensaje</label
+                >
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="d-grid d-md-flex justify-content-md-end">
+                <button class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col">
+            <!-- mapa  -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.113779350094!2d-65.20985452498485!3d-26.83633319001602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0ef228d361%3A0xd32c1d98f9664db4!2sGral.%20Paz%20578%2C%20T4000BLL%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1713983001897!5m2!1ses-419!2sar"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Compañía</h3>
+        <ul>
+          <li><a href="/pages/nosotros.html">Nosotros</a></li>
+          <li><a
+              href="https://www.google.com/maps/place/RollingCode+School/@-26.8365833,-65.2097419,17z/data=!3m1!4b1!4m6!3m5!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8365833!4d-65.207167!16s%2Fg%2F11h0b4kn08?hl=es&entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D">Nuestra
+              dirección</a></li>
+          <li><a href="/pages/404.html">Política De Privacidad</a></li>
+          <li><a href="/pages/login.html">Afíliate</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Ayuda</h3>
+        <ul>
+          <li><a href="/pages/404.html">Preguntas</a></li>
+          <li><a href="/pages/404.html">Compras</a></li>
+          <li><a href="/pages/404.html">Envíos</a></li>
+          <li><a href="/pages/404.html">Pago</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Tienda</h3>
+        <ul>
+          <li><a href="#destacados">Productos</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Síguenos</h3>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a></li>
+          <li><a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="login_modal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+  <!-- Modal -->
+  <div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
-    <!-- bootstrap-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Materialize.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- data.js-->
-    <script src="./js/data.js"></script>
-    <!-- paginaPrincipal.js-->
-    <script src="./js/paginaPrincipal.js"></script>
-    <!-- script navbar -->
-     <script src="/js/navbar.js"></script>
-     <!-- script politica -->
-     <script src="/js/politica.js"></script>
-  </body>
+  </div>
+  <!-- bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Materialize.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- data.js-->
+  <script src="./js/data.js"></script>
+  <!-- paginaPrincipal.js-->
+  <script src="./js/paginaPrincipal.js"></script>
+  <!-- script navbar -->
+  <script src="/js/navbar.js"></script>
+  <!-- script politica -->
+  <script src="/js/politica.js"></script>
+</body>
+
 </html>
